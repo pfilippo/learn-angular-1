@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="myApp">
-<head>
-<script src="angular.min.js"></script>
-<script src="app.js"></script>
-</head>
-<body>
-hi
-</body>
+	<head>
+		<script src="angular.min.js"></script>
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<div ng-controller="test">
+			<input ng-model="data"> <br>
+			{{data}}
+		</div>
+	</body>
 </html>
