@@ -9,7 +9,7 @@
     </style>
   </head>
 <body ng-app="LunchCheck">
-   <div class="container" ng-controller="lcC">
+   <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
 
          <div class="form-group">
@@ -18,11 +18,10 @@
              class="form-control" ng-model="dishes">
          </div>
          <div class="form-group">
-             <button class="btn btn-default">Check If Too Much</button>
+             <button class="btn btn-default" ng-click="Check()">Check If Too Much</button>
          </div>
-         <div class="form-group message">
-           {{dishes}}
-           <!-- Your message can go here. -->
+         <div class="form-group message" ng-style="textStyle">
+           {{message}}
          </div>
    </div>
    <script src="angular.min.js"></script>
