@@ -1,0 +1,5 @@
+<div class = "row" ng-repeat="item in found">
+  <div class ="col-md-3"><h5>{{item.name}} / {{item.short_name}}</h5></div>
+  <div class ="col-md-9">{{item.description}} <button class = "btn btn-xs" ng-click="onRemove({index: $index})" >Don't want this one!</button>  </div>
+</div>
+<div ng-if="found.length === 0">Nothing found</div>
