@@ -19,7 +19,7 @@ function MyInfo($http, ApiPath) {
   };
 
   service.checkDish = function (dish) {
-    return $http.get(ApiPath + 'menu_items/' + dish +'.json');
+    return $http.get(ApiPath + '/menu_items/' + dish +'.json');
   };
 
 }
